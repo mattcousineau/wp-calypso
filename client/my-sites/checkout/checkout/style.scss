@@ -1109,7 +1109,7 @@
 	.formatted-header {
 		color: var( --color-jetpack-onboarding-text );
 	}
-	
+
 	.formatted-header__subtitle {
 		color: var( --color-primary-100 );
 	}
@@ -1138,5 +1138,24 @@
 	.checkout-thank-you__jetpack .plan-thank-you-card .thank-you-card,
 	.checkout-thank-you__jetpack .plan-thank-you-card .thank-you-card {
 		box-shadow: none;
+	}
+}
+
+.checkout__site-created-notice-wrapper {
+	overflow: hidden;
+	float: none;
+	clear: both;
+	margin: 0 auto 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	@include breakpoint( '<660px' ) {
+		display: none;
+	}
+	.checkout__site-created-copy {
+		margin: 0 20px;
+	}
+	.checkout__site-created-image {
+		height: 40px;
 	}
 }
